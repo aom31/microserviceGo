@@ -17,9 +17,9 @@ func main() {
 	}
 
 	//Migrate the schema or create table database data init
-	db.AutoMigrate(&Customer{})
+	db.AutoMigrate(&model.Customer{})
 
 	//create data in field
-	db.Create(&Customer{Firstname: "thamakorn", Lastname: "ketnoi", Email: "thamakorn@gmail.com", Telnumber: 829163122, IDcard: 1709225408342})
-	db.Create(&Customer{Firstname: "nuti", Lastname: "supawat", Email: "natnat@gmail.com", Telnumber: 748852992, IDcard: 330425408322})
+	db.Create(&model.Customer{Firstname: "thamakorn", Lastname: "ketnoi", Email: "thamakorn@gmail.com", Telnumber: 829163122, IDcard: 1709225408342})
+	db.Create(&model.Customer{Firstname: "nuti", Lastname: "supawat", Email: "natnat@gmail.com", Telnumber: 748852992, IDcard: 330425408322})
 }

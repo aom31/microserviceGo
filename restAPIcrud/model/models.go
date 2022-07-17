@@ -8,5 +8,5 @@ type Customer struct {
 	Lastname  string
 	Email     string
 	Telnumber int
-	IDcard    int
+	IDcard    string `json : "idcard"`
 }
